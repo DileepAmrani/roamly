@@ -13,7 +13,7 @@ const Hero = () => {
 
 
 
-  const HTTP = "https://roamly-sever.vercel.app/chat";
+  const HTTP = "https://roamly-ten.vercel.app/chat";
 
   const handleSubmit = () => {
     setLoader(true)
