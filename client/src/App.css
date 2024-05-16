@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F5F4F4;
+}
+
+
+@font-face {
+  font-family: "AvenirNext-Medium";
+  src: url("./fonts/AvenirNext-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DMMono-Medium";
+  src: url("./fonts/DMMono-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMMono-Regular";
+  src: url("./fonts/DMMono-Regular.ttf") format("truetype");
+}
+
+
+.f-anvenirnext-m {
+  font-family: "AvenirNext-Medium", sans-serif;
+}
+
+.f-dmmono-r {
+  font-family: "DMMono-Regular", sans-serif;
+}
+.f-dmmono-m {
+  font-family: "DMMono-Medium", sans-serif;
+}
