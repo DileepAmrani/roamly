@@ -63,7 +63,8 @@ const Hero = () => {
     const concreteReplacement = `<span class="bg-[#E1FF22] inline-block text-white rounded-[20px] px-[10px] py-[2px] f-dmmono-r leading-[65px]">${randomConcrete.toLowerCase()}</span>`;
     const abstractReplacement = `<span class="bg-[#a236d4] inline-block text-white rounded-[20px] px-[10px] py-[2px] f-dmmono-r leading-[65px]">${randomAbstract.toLowerCase()}</span>`;
 
-    return a.replace(new RegExp(randomConcrete.toLowerCase(), 'g'), concreteReplacement).replace(new RegExp(randomAbstract.toLowerCase(), 'g'), abstractReplacement);
+    const text = a.replace(new RegExp(randomConcrete.toLowerCase(), 'g'), concreteReplacement).replace(new RegExp(randomAbstract.toLowerCase(), 'g'), abstractReplacement);
+    return text.charAt(0).toUpperCase() + text.slice(1);
   };
 
   return (
@@ -92,7 +93,9 @@ const Hero = () => {
             setSelectedConcrete={setSelectedConcrete}
             selectedAbstract={selectedAbstract}
             setSelectedAbstract={setSelectedAbstract}
-          handleSubmit={handleSubmit} />
+            handleSubmit={handleSubmit}
+            onShuffle={handleSubmit}
+             />
         </div>
       </div>
     </section>

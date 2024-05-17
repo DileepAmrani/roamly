@@ -44,12 +44,12 @@ const Footer = () => {
                 <span className='text-[#292929] f-anvenirnext-m text-base'>© 2024</span>
                 <div className='flex items-center gap-5'>
                     <img src={Mail} alt="mail" />
-                    <span className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io@gmail.com</span>
+                    <a href='mailto:roamly.io@gmail.com' className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io@gmail.com</a>
                 </div>
 
                 <div className='flex items-center gap-5'>
                     <img src={InstaIcon} alt="mail" />
-                    <span className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io</span>
+                    <a href='https://www.instagram.com/roamly.io/' target='_blank' className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io</a>
                 </div>
             </div>
         </section>
