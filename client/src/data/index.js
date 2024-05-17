@@ -20,7 +20,7 @@ const AbstractData = [
         words: ["Freedom", "Democracy", "Tyranny", "Leadership", "Followership", "Heroism", "Villainy", "Wealth", "Poverty", "Abundance", "Scarcity", "Altruism", "Egoism", "Revolution", "Rebellion", "Conformity", "Individuality"]
     },
     {
-        icon: "group",
+        icon: "asthetic",
         title: "Aesthetic and Creative Concepts",
         words: ["Beauty", "Creativity", "Imagination", "Intuition", "Curiosity", "Inspiration", "Symbolism", "Metaphor", "Irony", "Paradox", "Comedy", "Tragedy"]
     },
