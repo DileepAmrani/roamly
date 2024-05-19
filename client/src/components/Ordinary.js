@@ -7,7 +7,7 @@ const Ordinary = () => {
     return (
         <section className='w-full px-4 mb-44'>
             <div className='w-full max-w-[1300px] relative mx-auto lmd:h-[800px] flex justify-center items-center flex-col'>
-                <h1 className='text-black_800 relative z-50 f-anvenirnext-m text-6xl md:text-[95px] leading-[70px] md:leading-[118px] w-full max-w-[612px] mx-auto text-center'>Roam Beyond the Ordinary</h1>
+                <h1 className='text-black_800 relative z-50 f-anvenirnext-m text-6xl md:text-[95px] leading-[70px] md:leading-[118.75px] w-full max-w-[612px] mx-auto text-center'>Roam Beyond the Ordinary</h1>
 
                 <div className='lmd:absolute -top-40 bottom-auto left-12'>
                     <div className='bg-[#EADFFF] w-60 md:w-[320px] h-60 md:h-[320px] rounded-2xl p-4 mt-10'>

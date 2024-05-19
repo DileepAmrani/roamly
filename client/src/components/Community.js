@@ -9,11 +9,6 @@ import Image2 from "../assets/Community-2.svg"
 import { MdOutlineFavoriteBorder, MdOutlineModeComment, MdOutlineArrowOutward } from "react-icons/md";
 import { FaRegBookmark } from "react-icons/fa6";
 
-
-
-
-
-
 const Community = () => {
     return (
         <section className='w-full px-4'>

@@ -3,7 +3,7 @@ import ArrowDown from "../assets/arrow-down.svg";
 import ArrowDownWhite from "../assets/arrow-down-white.svg";
 import DiceIcon from "../assets/dice-icon.svg";
 import { AbstractData, ConcreteData } from "../data";
-import { Emotion, Ethics, Philosophy, Asthetic, Group } from "./../assets/icons"
+import { Emotion, Ethics, Philosophy, Asthetic, Temporal, Group, Cognitive, Furniture, Household, Electronics, Office, Outdoor, Accessories, Tools, Transportation, Media, Miscellaneous } from "./../assets/icons"
 const ConcreteBox = ({ selectedConcrete, setSelectedConcrete, selectedAbstract, setSelectedAbstract, handleSubmit, onShuffle }) => {
     const [isConcreteOpen, setIsConcreteOpen] = useState(false);
     const [isAbstractOpen, setIsAbstractOpen] = useState(false);
@@ -66,20 +66,44 @@ const ConcreteBox = ({ selectedConcrete, setSelectedConcrete, selectedAbstract, 
 
     const getIcon = (name) => {
         switch (name) {
-          case 'emotion':
-            return <Emotion />;
-          case 'ethics':
-            return <Ethics />;
-          case 'philosophy':
-            return <Philosophy />;
-          case 'asthetic':
-            return <Asthetic />;
-          case 'group':
-            return <Group />;
-          default:
-            return <Emotion />;
+            case 'emotion':
+                return <Emotion />;
+            case 'ethics':
+                return <Ethics />;
+            case 'philosophy':
+                return <Philosophy />;
+            case 'group':
+                return <Group />;
+            case 'temporal':
+                return <Temporal />;
+            case 'asthetic':
+                return <Asthetic />;
+            case 'cognitive':
+                return <Cognitive />;
+            case 'furniture':
+                return <Furniture />;
+            case 'household':
+                return <Household />;
+            case 'electronics':
+                return <Electronics />;
+            case 'office':
+                return <Office />;
+            case 'outdoor':
+                return <Outdoor />;
+            case 'accessories':
+                return <Accessories />;
+            case 'tools':
+                return <Tools />;
+            case 'transportation':
+                return <Transportation />;
+            case 'media':
+                return <Media />;
+            case 'miscellaneous':
+                return <Miscellaneous />;
+            default:
+                return <Emotion />;
         }
-      };
+    };
 
     return (
         <div className='border border-gray_900 bg-white rounded-2xl p-4 max-w-[400px] w-full h-fit'>
@@ -118,7 +142,7 @@ const ConcreteBox = ({ selectedConcrete, setSelectedConcrete, selectedAbstract, 
             </div>
 
             <div className='flex justify-between gap-2 items-center'>
-                <button className='bg-black-700 rounded-[10px] w-full h-10 flex-1 px-4 flex items-center justify-center text-white text-base f-anvenirnext-m text-center' onClick={()=>handleSubmit()}>Regenerate</button>
+                <button className='bg-black-700 rounded-[10px] w-full h-10 flex-1 px-4 flex items-center justify-center text-white text-base f-anvenirnext-m text-center' onClick={() => handleSubmit()}>Regenerate</button>
                 <button className='bg-black_800 border-[.75px] border-white rounded-[10px] h-10 w-10 flex items-center justify-center' onClick={shuffleSelections}>
                     <img src={DiceIcon} alt="Arrow Circle Right" />
                 </button>

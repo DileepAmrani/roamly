@@ -60,8 +60,8 @@ const Hero = () => {
   }, []);
 
   const renderWords = (a) => {
-    const concreteReplacement = `<span class="bg-[#E1FF22] inline-block text-white rounded-[20px] px-[10px] py-[2px] f-dmmono-r  text-4xl leading-[35px] md:text-[80px] md:leading-[80px]">${randomConcrete.toLowerCase()}</span>`;
-    const abstractReplacement = `<span class="bg-[#a236d4] inline-block text-white rounded-[20px] px-[10px] py-[2px] f-dmmono-r  text-4xl leading-[35px] md:text-[80px] md:leading-[80px]">${randomAbstract.toLowerCase()}</span>`;
+    const concreteReplacement = `<span class="bg-[#E1FF22] inline-block text-white rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1">${randomConcrete.toLowerCase()}</span>`;
+    const abstractReplacement = `<span class="bg-[#a236d4] inline-block text-white rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1">${randomAbstract.toLowerCase()}</span>`;
 
     const text = a.replace(new RegExp(randomConcrete.toLowerCase(), 'g'), concreteReplacement).replace(new RegExp(randomAbstract.toLowerCase(), 'g'), abstractReplacement);
     return text.charAt(0).toUpperCase() + text.slice(1);
@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="h-6 md:h-10 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
             </div>
             :
-            <h1 className="text-black_900 text-center xmd:text-start f-anvenirnext-m text-4xl leading-[35px] md:text-[80px] md:leading-[80px] flex gap-2 flex-wrap">
+            <h1 className="text-black_900 text-center xmd:text-start f-anvenirnext-m text-4xl leading-[40px] md:text-[80px] md:leading-[80px] flex gap-2 flex-wrap">
               <div
                 dangerouslySetInnerHTML={{ __html: response ? renderWords(response, randomAbstract, randomConcrete) : "" }}
               />
