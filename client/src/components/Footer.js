@@ -41,15 +41,15 @@ const Footer = () => {
 
         <section className='py-14 px-4 flex items-center'>
             <div className='flex items-center justify-center w-full gap-8 sm:gap-[60px] flex-col-reverse sm:flex-row'>
-                <span className='text-[#292929] f-anvenirnext-m text-base'>© 2024</span>
+                <span className='text-[#292929] f-anvenirnext-m text-xl'>© 2024</span>
                 <div className='flex items-center gap-5'>
                     <img src={Mail} alt="mail" />
-                    <a href='mailto:roamly.io@gmail.com' className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io@gmail.com</a>
+                    <a href='mailto:roamly.io@gmail.com' className='text-deep_gray f-anvenirnext-m text-xl'>roamly.io@gmail.com</a>
                 </div>
 
                 <div className='flex items-center gap-5'>
                     <img src={InstaIcon} alt="mail" />
-                    <a href='https://www.instagram.com/roamly.io/' target='_blank' className='text-deep_gray f-anvenirnext-m font-semibold text-xl'>roamly.io</a>
+                    <a href='https://www.instagram.com/roamly.io/' target='_blank' className='text-deep_gray f-anvenirnext-m text-xl'>roamly.io</a>
                 </div>
             </div>
         </section>

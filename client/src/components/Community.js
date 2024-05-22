@@ -29,7 +29,7 @@ const Community = () => {
                         <div className='flex justify-between items-center gap-3 flex-wrap'>
                             <div className='flex items-center gap-2'>
                                 <img src={Avatars1} alt="Name" className='w-10 h-10 rounded-full' />
-                                <h4 className='text-black_800 f-anvenirnext-m text-xl'>Amie</h4>
+                                <h4 className='text-black_800 f-anvenirnext-m text-xl flex-1'>Amie</h4>
                             </div>
 
                             <div className='flex items-center gap-4'>
@@ -66,7 +66,7 @@ const Community = () => {
                         <div className='flex justify-between items-center gap-3 flex-wrap'>
                             <div className='flex items-center gap-2'>
                                 <img src={Avatars2} alt="Name" className='w-10 h-10 rounded-full' />
-                                <h4 className='text-white f-anvenirnext-m text-xl'>Amie</h4>
+                                <h4 className='text-white f-anvenirnext-m text-xl flex-1'>Amie</h4>
                             </div>
 
                             <div className='flex items-center gap-4'>
@@ -103,7 +103,7 @@ const Community = () => {
                         <div className='flex justify-between items-center gap-3 flex-wrap'>
                             <div className='flex items-center gap-2'>
                                 <img src={Avatars1} alt="Name" className='w-10 h-10 rounded-full' />
-                                <h4 className='text-black_800 f-anvenirnext-m text-xl'>Amie</h4>
+                                <h4 className='text-black_800 f-anvenirnext-m text-xl flex-1'>Amie</h4>
                             </div>
 
                             <div className='flex items-center gap-4'>

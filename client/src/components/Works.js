@@ -23,7 +23,7 @@ const Works = () => {
                     </div>
                 </div>
 
-                <div className='flex gap-10 flex-col-reverse lmd:flex-row-reverse mb-[100px]'>
+                <div className='flex gap-10 flex-col lmd:flex-row-reverse mb-[100px]'>
                     <div className='w-full lmd:w-[40%] px-4  flex flex-col lmd:justify-center'>
                         <div className='lmd:max-w-[420px] mx-auto w-full'>
                             <h4 className='text-dark_gray text-xl f-dmmono-m mb-8'>Creativity</h4>
