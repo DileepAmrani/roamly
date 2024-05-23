@@ -31,7 +31,7 @@ app.post("/chat", async (req, res) => {
     const { prompt } = req.body;
     try {
         const completion = await openai.chat.completions.create({
-            messages: [{ role: 'user', content: `${prompt} max 15 words` }],
+            messages: [{ role: 'user', content: `${prompt} max 12 words` }],
             model: 'gpt-3.5-turbo',
         });
         res.send(completion.choices[0].message);

@@ -39,14 +39,20 @@ const Hero = () => {
     const newPrompt = `Generate a surprising, imaginative, light-hearted, and contradicting prompt that encourages lateral, playful, and imaginative thinking using the provided abstract and concrete concepts dataset. 
     Make sure to must must include the following exact words without changing them: 
     word concrete = ${randomConcreteWord}, 
-    word abstract = ${randomAbstractWord}.`;
+    word abstract = ${randomAbstractWord}.
+    it should be just a simple sentence. maximuim 150 characters
+    `;
 
     axios
       .post(`${HTTP}`, { prompt: newPrompt })
       .then((res) => {
-        setResponse(res.data.content.toLowerCase());
-        console.log(res);
-        setLoader(false);
+        const content = res.data.content.toLowerCase();
+        if (content.includes(randomConcreteWord.toLowerCase()) && content.includes(randomAbstractWord.toLowerCase())) {
+          setResponse(content);
+          setLoader(false);
+        } else {
+          handleSubmit(); // Recursively call handleSubmit if words are not present in response
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -63,8 +69,8 @@ const Hero = () => {
     const concretePattern = new RegExp(`(${escapeRegex(randomConcrete.toLowerCase())}[^\\s]*)`, 'g');
     const abstractPattern = new RegExp(`(${escapeRegex(randomAbstract.toLowerCase())}[^\\s]*)`, 'g');
 
-    const concreteReplacement = `<span class="bg-[#E1FF22] inline-block text-black rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1 mr-1">$1</span>`;
-    const abstractReplacement = `<span class="bg-[#5C08EC] inline-block text-white rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1">$1</span>`;
+    const concreteReplacement = `<span class="bg-yellow_900 inline-block text-black rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1 mr-1">$1</span>`;
+    const abstractReplacement = `<span class="bg-purple_700 inline-block text-white rounded-[12px] md:rounded-[20px] px-[10px] py-[10px] md:py-[2px] f-dmmono-r text-4xl leading-[40px] md:text-[80px] md:leading-[80px] my-[6px] md:my-1">$1</span>`;
 
     const text = a
       .replace(concretePattern, concreteReplacement)
